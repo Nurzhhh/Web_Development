@@ -1,0 +1,110 @@
+html, body {
+    /* width: 50%; */
+    text-align: center;
+    margin: 0 auto;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* background-image: url('back.jpg'); */
+    background-color: teal  ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.container {
+    /* width: 360px; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(247, 232, 247);
+    width: 460px;
+    height: 600px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    /* margin-top: 100px; */
+}
+
+h1{
+    margin: 12px 0;
+}
+
+.addelement{
+    margin: 12px 0;
+}
+
+input{
+    padding: 6px 4px;
+    width: 70%;
+}
+
+button{
+    padding: 7px 14px;
+    border: none;
+    /* width: 70%; */
+}
+
+#inputField {
+    /* width: 300px;
+    height: 30px; */
+    text-align: center;
+    border-width: 0;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#addToDo {
+    /* height: 34px;
+    width: 60px; */
+    margin-left: 30px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 25px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.paragraph-styling {
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.to-dos {
+    margin-top: 25px;
+}
+
+ul{
+    padding: 15px;
+}
+li{
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,.16);
+    border-radius: 5px;
+    transition: .4s;
+}
+button:hover{
+    background-color: #1565c0;
+}
+
+li:hover{
+    background-color: #e0e0e0;
+}
+
+.checked{
+    text-decoration: line-through;
+    background-color: #e0e0e0;
+}
