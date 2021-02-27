@@ -1,0 +1,41 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <img src="{{product.imagePath}}" width="300px" />
+  <h3>
+    <a href="{{product.linkPath}}"> {{ product.name }} </a>
+  </h3>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="text">5 / 5</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="text">4 / 5</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="text">3 / 5</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="text">2 / 5</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="text">1 / 5</label>
+  </div>
+
+  <p *ngIf="product.description">
+    Description: {{product.description}}
+  </p>
+
+  <a
+    class="telegram"
+    rel="nofollow"
+    href="javascript: void(0)"
+    (click)="share()"
+    title="Поделиться в Телеграм"
+    ><button (click)="share(product.linkPath,product.description)">
+      Share
+    </button></a
+  >
+</div>
