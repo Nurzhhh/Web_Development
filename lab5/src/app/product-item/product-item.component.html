@@ -1,0 +1,49 @@
+<div *ngIf="category">
+  <h2>{{category.category}}</h2>
+</div>
+
+
+<ng-container *ngFor="let producti of products">
+  <ng-container *ngIf="producti.id === categoryIdd">
+
+    <h3>
+      <a [title]="producti.name + ' details'" [routerLink]="['/products', producti.idpro]">
+        {{ producti.name }}
+      </a>
+    </h3>
+
+    <img  *ngIf="producti" [src]="producti.source" width="300px">
+
+    <p *ngIf="producti.description">
+      Description: {{ producti.description }}
+    </p>
+
+    <p *ngIf="producti.rating">
+      Rating: {{ producti.rating }}
+    </p>
+
+    <p>
+      Likes: {{ producti.likes }}
+    </p>
+
+    <button class="btn" (click)="share(producti.link, producti.description)">
+      Share
+    </button>
+
+    <!-- <app-product-alerts
+      [product]="producti"
+      (notify)="onNotify()">
+    </app-product-alerts> -->
+
+
+    <button class="btn" (click)="likeItem(producti.idpro)">
+      Like
+    </button>
+
+    <button class="btn" (click)="removeItem(producti.idpro)">
+      Remove
+    </button>
+
+
+  </ng-container>
+</ng-container>
