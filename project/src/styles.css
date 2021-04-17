@@ -1,0 +1,94 @@
+/* Global Styles */
+
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: monospace;
+  background-color: antiquewhite;
+}
+
+body {
+  margin: 0;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* router-outlet + *  {
+  padding: 0 16px;
+} */
+
+/* Text */
+
+a {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #1976d2;
+  cursor: pointer;
+  /* margin-bottom: 100px; */
+  /* align-items: center; */
+}
+
+/* div{
+  margin-top: 0px;
+} */
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  /* margin-bottom: 10px; */
+  /* margin-bottom: 10px; */
+  /* border: 12px; */
+  /* border-color: white; */
+  /* font-family: monospace; */
+  /* background-color: #1976d2; */
+}
+h3{
+  text-align: center;
+  color: black;
+  font-size: 17px;
+  position: relative;
+  bottom: 50px;
+  /* font-family: monospace; */
+}
+
+.login {
+  text-align: right;
+  position: relative;
+  bottom: 100px;
+  right: 20px;
+  background: none;
+}
+/* p {
+  font-size: 14px;
+} */
+
+/* Hyperlink */
+/* 
+a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+  text-align: right;
+  margin-left: 500px;
+} */
+
+
+.material-icons {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+  text-align: right;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

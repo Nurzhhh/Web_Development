@@ -1,0 +1,23 @@
+<a>
+    <h1>Cooking</h1>
+
+    <div class="login">
+      <a routerLink="/cart" class="button_fancy-button">
+        <i class="material-icons"></i> Login
+    </a>
+    </div>
+
+    <div>
+        <h3>
+            Welcome to our website! You can find any recipte that you want.
+        </h3>
+    </div>
+
+    <div>
+        <li *ngFor="let category of categories">
+            <a [routerLink]="['/categories', category.categoryId]">{{category.categoryId}}) {{category.title}}</a>
+            <button (click)="deleteAlbum(category.categoryId)">delete</button>
+        </li>
+    </div>
+
+</a>
