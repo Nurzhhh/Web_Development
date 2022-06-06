@@ -41,7 +41,6 @@ class Vacancy(models.Model):
             'name': self.name,
             'description': self.description,
             'salary': self.salary,
-
         }
 
     def __str__(self):

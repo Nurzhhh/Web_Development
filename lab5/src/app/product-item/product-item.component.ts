@@ -34,7 +34,7 @@ export class ProductItemComponent implements OnInit {
     this.categoryIdd = categoryIdFromRoute;
     this.product = products.find(product => product.id === categoryIdFromRoute);
     this.category = products.find(category => category.id === categoryIdFromRoute);
-  }
+  } 
   likeItem(idpro) {
     products[idpro].likes += 1
   }

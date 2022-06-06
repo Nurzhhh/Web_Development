@@ -54,4 +54,5 @@ def vacancies_top_ten(request):
     vacancies = Vacancy.objects.all()
     vacancies_json = [vacancy.to_json() for vacancy in vacancies]
     vacancies_json = sorted(vacancies_json, key=lambda k : k['salary'], reverse=True)
+    vacancies_json = vacancies_json[:11]
     return JsonResponse(vacancies_json, safe=False)
